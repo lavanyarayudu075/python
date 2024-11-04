@@ -1,0 +1,10 @@
+def largest_digit(N):
+    # Convert the number to a string to access each digit
+    max_digit = max(int(digit) for digit in str(N))
+    return max_digit
+
+# Input reading
+N = int(input().strip())
+
+# Display the largest digit
+print(largest_digit(N))
