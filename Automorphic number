@@ -1,0 +1,12 @@
+def checkAuto(a):
+    if a < 0:
+        a = -a  
+    squareNum = a * a  
+    count = len(str(a))
+    lastDigit = squareNum % (10 ** count)
+    if lastDigit == a:
+        return "Automorphic Number"
+    else:
+        return "Not an Automorphic Number"
+num = int(input())
+print(checkAuto(num))  
