@@ -1,0 +1,16 @@
+import string
+def is_pangram(s: str) -> bool:
+    s_lower = s.lower()
+    present_letters = set()
+    for char in s_lower:
+        if 'a' <= char <= 'z':
+            present_letters.add(char)
+    return len(present_letters) == 26
+try:
+    input_string = input()
+    result = is_pangram(input_string)
+    print(result)
+except EOFError:
+    pass
+except Exception as e:
+    pass
