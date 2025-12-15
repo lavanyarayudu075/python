@@ -1,0 +1,10 @@
+def insert(s, element):
+    s.add(element)
+    return s
+    
+def remove_from_set(s, element):
+    s.remove(element)
+    return s
+  
+def sum_set(s):
+  return sum(s)
