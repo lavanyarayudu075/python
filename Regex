@@ -1,0 +1,10 @@
+import re
+
+def numberMatcher(s):
+    pat = r"\d+"          # match one or more digits together
+    match = re.findall(pat, s)
+
+    if match:
+        print(" ".join(match), end="")
+    else:
+        print(-1, end="")
