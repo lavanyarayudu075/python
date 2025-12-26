@@ -1,0 +1,11 @@
+class Solution:
+    def toLower (self , s : str)-> str : ##### conversion into lower case
+        return s.lower()
+
+class Solution:
+    def to_upper(self, str): #### cnversion into upper case
+        return str.upper()
+
+class Solution:
+    def convert(self, s): #### conversion of first char into capital we use title() function.
+        return s.title()
