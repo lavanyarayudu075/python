@@ -1,0 +1,6 @@
+def returnValueFunction(n): ###### fun with return value
+    return (n*2)
+
+## Type conversion
+d = float(input())
+print(int(d))
