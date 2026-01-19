@@ -1,0 +1,18 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+arr=list(map(int,input().split()))
+mean = sum(arr)/n
+if n%2 == 1:
+    median = arr[n//2]
+else:
+    median = (arr[n//2-1]+arr[n//2])/2
+freq ={}
+mode = arr[0]
+max_count=0
+
+for num in arr:
+    freq[num] = freq.get(num,0)+1
+    if freq[num]>max_count:
+        max_count=freq[num]
+        mode=num
+print(f"{mean:.2f} {median:.2f} {mode}")
