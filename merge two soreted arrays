@@ -1,0 +1,25 @@
+n = int(input())  ## sizes
+A = list(map(int,input().split()))
+m = int(input())  ## sizes
+B = list(map(int,input().split()))
+
+i = j = 0  ## 2 cases
+result = []  # final ans
+
+while i<n and j<m: ## condition i<n and j<m == a[i]<=b[j] we have to prove
+    if A[i]<=B[j]:
+        result.append(A[i])  
+        i += 1
+    else:
+        result.append(B[j])
+        j += 1
+## if the above if condtion is true it will merge the i with j
+## if the above else conditon j is true it will merge j with i
+while i<n:
+    result.append(A[i]) ## checking i<n or not
+    i += 1
+while j<m:
+    result.append(B[j]) ## j<m or not
+    j += 1
+
+print(*result) ## print the result
